@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 30vw;
+    transition: box-shadow;
+}
+
+img:hover {
+    animation: shadow-animation 3s ease-in-out infinite;
+}
+
+@keyframes shadow-animation {
+    0%,100% {
+        box-shadow: 27px 27px 35px 24px #dee791,-27px -27px 35px 24px #c6e9f3;
+    }
+    33% {
+        box-shadow: 27px 27px 35px 24px #f6ead1,-27px -27px 35px 24px #f6ead1;
+    }
+    66% {
+        box-shadow: 27px 27px 35px 24px #c6e9f3,-27px -27px 35px 24px #dee791;
+    }
+    80% {
+        box-shadow: 27px 27px 35px 24px #f6ead1,-27px -27px 35px 24px #f6ead1;
+    }
+    90% {
+        box-shadow: 27px 27px 35px 14px #f6ead1,-27px -27px 35px 14px #f6ead1;
+    }
+}
+
+
